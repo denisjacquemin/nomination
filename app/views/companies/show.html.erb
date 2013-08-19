@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Extrated name:</strong>
+  <%= @company.extrated_name %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Reg commerce number:</strong>
+  <%= @company.reg_commerce_number %>
+</p>
+
+<p>
+  <strong>Legilux url:</strong>
+  <%= @company.legilux_url %>
+</p>
+
+<p>
+  <strong>Constitution date:</strong>
+  <%= @company.constitution_date %>
+</p>
+
+<p>
+  <strong>Forme juridique:</strong>
+  <%= @company.forme_juridique %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

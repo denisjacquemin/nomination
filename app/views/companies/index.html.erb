@@ -1,0 +1,37 @@
+<h1>Listing companies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extrated name</th>
+      <th>Name</th>
+      <th>Reg commerce number</th>
+      <th>Legilux url</th>
+      <th>Constitution date</th>
+      <th>Forme juridique</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.extrated_name %></td>
+        <td><%= company.name %></td>
+        <td><%= company.reg_commerce_number %></td>
+        <td><%= company.legilux_url %></td>
+        <td><%= company.constitution_date %></td>
+        <td><%= company.forme_juridique %></td>
+        <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company', new_company_path %>

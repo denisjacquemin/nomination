@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  extrated_name: MyString
+  name: MyString
+  reg_commerce_number: MyString
+  legilux_url: MyString
+  constitution_date: 2013-08-19
+  forme_juridique: MyString
+
+two:
+  extrated_name: MyString
+  name: MyString
+  reg_commerce_number: MyString
+  legilux_url: MyString
+  constitution_date: 2013-08-19
+  forme_juridique: MyString
